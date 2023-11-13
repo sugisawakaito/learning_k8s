@@ -19,9 +19,11 @@ spec:
   containers:
   - name: debug
     image: centos:7
+    # [command]: DockerではENTORYPOINTに相当する
     command: 
     - "sh"
     - "-c"
+    # [args]: DockerではCMDに相当する(ちなみにDockerのCMDは引数を表す)
     args:
     - |
       while true
