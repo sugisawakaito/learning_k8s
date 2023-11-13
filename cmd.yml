@@ -1,0 +1,6 @@
+kubectl:
+  apply: "マニファクトファイルの記述をkubenerticeに反映するコマンド。ちなみに'-f'か'-k'がないとmust errorになる"
+    "-f": "どのファイルをしているか表す。 -f. --filename=[]"
+  get: "反映されたPodsのstatusを確認するコマンド"
+    "-w": "Podsのstatusが変更するまでログが出続ける。-w, --watch"  
+  delete: "反映されているPodsを削除するコマンド"
