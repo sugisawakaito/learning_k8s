@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mysql-server-initdb-config
+data:
+  createdb.sql: |
+    CREATE DATABASE job1;
+    CREATE DATABASE job2;
+    GRANT ALL ON job1.* TO devuser;
+    GRANT ALL ON job2.* TO devuser;
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mysql-server-conf-config
+data:
+  custom.cnf: |
+    [mysqld]
+    character-set-server=utf8

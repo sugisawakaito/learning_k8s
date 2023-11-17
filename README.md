@@ -13,12 +13,15 @@ https://www.udemy.com/course/web-application-with-docker-kubernetes/
 
 **"-o"**:
   **"wide"**: "IP情報まで見れる"
+
 #### delete
 反映されているPodsを削除するコマンド
 
 **cp <src> <pod-name>:<dest>**: "指定されたファイルを指定された転送先に送る"
 
-### describe
+#### describe
 
 **pod**: "反映されているkubeneticeの情報をgetより詳細にできる"
 
+#### rollout
+**history**: 過去の変更のコメントを見れる
